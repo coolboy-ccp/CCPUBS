@@ -14,6 +14,10 @@
 		7E13832E1E51841200AE57C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E13832D1E51841200AE57C7 /* Assets.xcassets */; };
 		7E1383311E51841200AE57C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E13832F1E51841200AE57C7 /* LaunchScreen.storyboard */; };
 		7E13833C1E51841200AE57C7 /* CCPUBSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E13833B1E51841200AE57C7 /* CCPUBSUITests.m */; };
+		7E1383491E5184CA00AE57C7 /* UIViewController+PageStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1383481E5184CA00AE57C7 /* UIViewController+PageStatistics.m */; };
+		7E13834C1E5186CC00AE57C7 /* CCPRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E13834B1E5186CC00AE57C7 /* CCPRuntime.m */; };
+		7E7562011E51DE6B0044751A /* UIControl+ControlStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7562001E51DE6B0044751A /* UIControl+ControlStatistics.m */; };
+		7E7562041E51E9220044751A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7562031E51E9220044751A /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		7E1383371E51841200AE57C7 /* CCPUBSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCPUBSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E13833B1E51841200AE57C7 /* CCPUBSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCPUBSUITests.m; sourceTree = "<group>"; };
 		7E13833D1E51841200AE57C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E1383471E5184CA00AE57C7 /* UIViewController+PageStatistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PageStatistics.h"; sourceTree = "<group>"; };
+		7E1383481E5184CA00AE57C7 /* UIViewController+PageStatistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PageStatistics.m"; sourceTree = "<group>"; };
+		7E13834A1E5186CC00AE57C7 /* CCPRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPRuntime.h; sourceTree = "<group>"; };
+		7E13834B1E5186CC00AE57C7 /* CCPRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPRuntime.m; sourceTree = "<group>"; };
+		7E7561FF1E51DE6B0044751A /* UIControl+ControlStatistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+ControlStatistics.h"; sourceTree = "<group>"; };
+		7E7562001E51DE6B0044751A /* UIControl+ControlStatistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ControlStatistics.m"; sourceTree = "<group>"; };
+		7E7562021E51E9220044751A /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		7E7562031E51E9220044751A /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +93,13 @@
 		7E1383201E51841200AE57C7 /* CCPUBS */ = {
 			isa = PBXGroup;
 			children = (
+				7E1383461E51849A00AE57C7 /* UBS */,
 				7E1383241E51841200AE57C7 /* AppDelegate.h */,
 				7E1383251E51841200AE57C7 /* AppDelegate.m */,
 				7E1383271E51841200AE57C7 /* ViewController.h */,
 				7E1383281E51841200AE57C7 /* ViewController.m */,
+				7E7562021E51E9220044751A /* TestViewController.h */,
+				7E7562031E51E9220044751A /* TestViewController.m */,
 				7E13832A1E51841200AE57C7 /* Main.storyboard */,
 				7E13832D1E51841200AE57C7 /* Assets.xcassets */,
 				7E13832F1E51841200AE57C7 /* LaunchScreen.storyboard */,
@@ -109,6 +124,19 @@
 				7E13833D1E51841200AE57C7 /* Info.plist */,
 			);
 			path = CCPUBSUITests;
+			sourceTree = "<group>";
+		};
+		7E1383461E51849A00AE57C7 /* UBS */ = {
+			isa = PBXGroup;
+			children = (
+				7E13834A1E5186CC00AE57C7 /* CCPRuntime.h */,
+				7E13834B1E5186CC00AE57C7 /* CCPRuntime.m */,
+				7E1383471E5184CA00AE57C7 /* UIViewController+PageStatistics.h */,
+				7E1383481E5184CA00AE57C7 /* UIViewController+PageStatistics.m */,
+				7E7561FF1E51DE6B0044751A /* UIControl+ControlStatistics.h */,
+				7E7562001E51DE6B0044751A /* UIControl+ControlStatistics.m */,
+			);
+			name = UBS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +243,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E1383491E5184CA00AE57C7 /* UIViewController+PageStatistics.m in Sources */,
+				7E13834C1E5186CC00AE57C7 /* CCPRuntime.m in Sources */,
+				7E7562041E51E9220044751A /* TestViewController.m in Sources */,
+				7E7562011E51DE6B0044751A /* UIControl+ControlStatistics.m in Sources */,
 				7E1383291E51841200AE57C7 /* ViewController.m in Sources */,
 				7E1383261E51841200AE57C7 /* AppDelegate.m in Sources */,
 				7E1383231E51841200AE57C7 /* main.m in Sources */,
@@ -414,6 +446,7 @@
 				7E1383421E51841200AE57C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E1383431E51841200AE57C7 /* Build configuration list for PBXNativeTarget "CCPUBSUITests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +455,7 @@
 				7E1383451E51841200AE57C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

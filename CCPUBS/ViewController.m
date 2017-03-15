@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "UIViewController+PageStatistics.h"
+#import "UIControl+ControlStatistics.h"
+#import "TestViewController.h"
 
 @interface ViewController ()
 
@@ -20,10 +23,21 @@
 }
 
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)testAction:(UIButton *)sender {
+
+}
 
 @end
